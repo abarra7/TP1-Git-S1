@@ -1,0 +1,5 @@
+1) La commande git status affiche les fichiers modifiés, créés ou supprimés du répertoire git. Dans mon cas, un nouveau fichier README.md avec du contenu est créer, ainsi git status l'affiche lors de l'execution de la commande en tant que fichier non suivi (untracked file). D'ailleurs les fichiers non suivies sont marqués en rouge.
+
+2) Désormais lors de l'execution de la commande git status . on peut voir le fichier README.md dans la partie changements à être commit (changes to be committed). On peut également voir l'indication nouveau fichier (new file) à gauche du nom du fichier. Les lignes contenant le status du fichier ainsi que son nom sont marqués en vert.
+
+3)
