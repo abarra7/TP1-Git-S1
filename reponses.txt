@@ -1,5 +1,12 @@
 1) La commande git status affiche les fichiers modifiés, créés ou supprimés du répertoire git. Dans mon cas, un nouveau fichier README.md avec du contenu est créer, ainsi git status l'affiche lors de l'execution de la commande en tant que fichier non suivi (untracked file). D'ailleurs les fichiers non suivies sont marqués en rouge.
 
-2) Désormais lors de l'execution de la commande git status . on peut voir le fichier README.md dans la partie changements à être commit (changes to be committed). On peut également voir l'indication nouveau fichier (new file) à gauche du nom du fichier. Les lignes contenant le status du fichier ainsi que son nom sont marqués en vert.
+2) Désormais lors de l'execution de la commande git status . on peut voir les fichiers README.md et reponses.txt dans la partie changements à être commit (changes to be committed). On peut également voir l'indication nouveau fichier (new file) à gauche du nom des fichiers. Les lignes contenant le status des fichiers ainsi que leurs nom sont marqués en vert.
 
-3)
+3) Après l'execution de la commande git add ., les ajouts sont partis dans la Staging Area, la partie entre les modifications et les commit.
+
+5) A l'aide de la commande git log, je regarde la liste des commits.
+
+6) La difference entre le deux est que la premiere (git diff) compare la version commit avec la version modifié, tandis qu'avec la deuxieme (git diff staged) on compare la version commit avec la version staged (lorsque l'on fait un git add).
+
+7) La commande git show permet de montrer les détails d'un commit, comme les modifications apportés à quels fichiers, l'auteur du commit, sa date, son hash. La commande git status permet de montrer les modifications en terme de fichier, cet à dire voir les noms des fichiers modifiés, crées ou supprimés. La commande git diff permet de comparer les differences dans les contenus des fichiers, entre ceux commit et ceux qui ne le sont pas. La commande git log permet de visionner l'ensemble des commits en affichant également le hash de chaque commit, les auteurs, les messages de commit.
+
