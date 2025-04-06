@@ -10,3 +10,10 @@
 
 7) La commande git show permet de montrer les détails d'un commit, comme les modifications apportés à quels fichiers, l'auteur du commit, sa date, son hash. La commande git status permet de montrer les modifications en terme de fichier, cet à dire voir les noms des fichiers modifiés, crées ou supprimés. La commande git diff permet de comparer les differences dans les contenus des fichiers, entre ceux commit et ceux qui ne le sont pas. La commande git log permet de visionner l'ensemble des commits en affichant également le hash de chaque commit, les auteurs, les messages de commit.
 
+8) Avec la manipulation demandé, la commande git status affiche deux fois "nouveau fichier" suivi d'abord de fichier1.txt puis brouillon.txt pour le second.
+
+9) La commande git reset sur le fichier brouillon.txt a retiré le fichier du staging area, ce qui signifie que si l'on fait un commit ce fichier ne sera pas ajouter. Ce qu'il se passe en terme de zones est : le fichier brouillon.txt est dans la staging area, après l'execution de la commande il passe dans le working directory.
+
+10) Pour être sûr que le fichier brouillon.txt n'est pas dans la staging area il faut executer la commande git status, il doit être marqué en rouge, dans la partie des fichiers non suivies (untracked files).
+
+11) J'utilise d'abord la commande git log --oneline pour m'assurer que j'ai le bon nombre de commits avec les bons détails. Puis je fait git show suivi d'un morceau du hash de chaque commit pour m'assurer que les modifications correspondent.
