@@ -17,3 +17,14 @@
 10) Pour être sûr que le fichier brouillon.txt n'est pas dans la staging area il faut executer la commande git status, il doit être marqué en rouge, dans la partie des fichiers non suivies (untracked files).
 
 11) J'utilise d'abord la commande git log --oneline pour m'assurer que j'ai le bon nombre de commits avec les bons détails. Puis je fait git show suivi d'un morceau du hash de chaque commit pour m'assurer que les modifications correspondent.
+
+12) Avec la commande git show --oneline, je peux voir que le dernier commit est lié à origin, qui est le nom donné au serveur distant. Il s'agit de la derniere partie écrite en rouge (HEAD -> develop, origin/develop).
+
+13) Afin de cloner le projet, j'utilise la commande git clone https://github.com/PaulineLam24/TP-Git.git. Un nouveau dossier du nom du projet sera ainsi créer et je pourrais y naviguer.
+
+14) Avec la commande ls -la je peux voir qu'il n'y a qu'un fichier README.md sur le répertoire. Ensuite avec la commande git log --oneline je trouve 3 commits :
+- Initial commit
+- Ajout dans README.md
+- Correctif README.md
+
+15) Avec la commande git diff 9b68886 f7a7e75 je vois que dans le premier commit (Initial commit) le fichier README.md existait déjà, et la différence avec le commit qui suit (Ajout dans README.md) est le remplacement du contenu : Le texte "# TP-Git" a été remplacé par le texte "# TP-Git\n# Ceci est un fichier README.md..." (\n signifie qu'il y a un saut à la ligne). Ensuite je fais la commande git diff f7a7e75 f8138d7 pour voir la différence entre l'avant dernier (Ajout dans README.md) et le dernier (Correctif README.md) commits. Je peux voir que le fichier README.md a de nouveau reçu des modifications, une ligne est resté pareil, une ligne a été supprimé et deux lignes on été ajoutés, voici les modifications en détails : La ligne "# TP-Git" est resté, la ligne "# Ceci est un fichier README.md..." a été replacé par les lignes "\nCeci est un fichier README.md...".
